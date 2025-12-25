@@ -1,0 +1,55 @@
+{
+  "name": "youtube",
+  "version": "3.0.0",
+  "description": "YouTube downloader and format listing module for Converso CLI",
+  "commands": [
+    "download",
+    "list_formats", 
+    "info"
+  ],
+  "dependencies": [
+    "yt-dlp",
+    "ffmpeg",
+    "rich"
+  ],
+  "author": "Converso Empire",
+  "license": "MIT",
+  "homepage": "https://cli.conversoempire.world/modules/youtube",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/converso-empire/cli"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "video",
+    "audio",
+    "media",
+    "converso"
+  ],
+  "platforms": [
+    "linux",
+    "darwin", 
+    "windows"
+  ],
+  "python_version": ">=3.8",
+  "entry_point": "__main__.py",
+  "wrapper": "yt_wrapper.py",
+  "description_long": "Advanced YouTube downloader module that wraps existing yt-dlp functionality with Converso CLI integration. Supports video/audio download, format listing, and metadata extraction with real-time progress tracking and enterprise-grade security.",
+  "features": [
+    "Video and audio download",
+    "Format listing and selection",
+    "Metadata extraction",
+    "Real-time progress tracking",
+    "FFmpeg integration",
+    "Secure authentication",
+    "Background processing",
+    "Enterprise logging"
+  ],
+  "requirements": {
+    "python": ">=3.8",
+    "ffmpeg": "required",
+    "yt_dlp": ">=2023.0.0",
+    "rich": ">=13.0.0"
+  }
+}
